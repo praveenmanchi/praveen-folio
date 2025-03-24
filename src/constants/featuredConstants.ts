@@ -1,3 +1,5 @@
+import img from '../assets/caseStudies/cs-bg-lg.png';
+import imgSm from '../assets/caseStudies/cs-bg-sm.png';
 export const featuresProjectCardsData = {
   caseStudyLg: [
     {
@@ -12,8 +14,7 @@ export const featuresProjectCardsData = {
       position: 'Lead Designer',
       client: 'ge',
       tools: '8 min',
-      imgSrc:
-        'https://media.nngroup.com/static/img/banners/home-consulting_2x.webp',
+      imgSrc: img,
       link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
     },
     {
@@ -28,8 +29,7 @@ export const featuresProjectCardsData = {
       position: 'Lead Designer',
       client: 'ge',
       tools: '8 min',
-      imgSrc:
-        'https://media.nngroup.com/static/img/banners/home-consulting_2x.webp',
+      imgSrc: imgSm,
       link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
     },
   ],
