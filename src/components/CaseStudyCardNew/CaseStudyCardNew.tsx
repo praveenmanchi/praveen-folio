@@ -2,7 +2,7 @@ import React from 'react';
 import arrow from '../../assets/forward-arrow.svg';
 import figmaLogo from '../../assets/figma.svg';
 import tool from '../../assets/micro-tool.svg';
-import './casestudyCard.css';
+import './CaseStudyCardNew.css';
 
 interface Props {
   expertise?: boolean;
@@ -24,7 +24,7 @@ interface Props {
   };
 }
 
-const CasestudyCard: React.FC<Props> = ({
+const CaseStudyCardNew: React.FC<Props> = ({
   expertise,
   microTool,
   Casestudy,
@@ -99,4 +99,4 @@ const CasestudyCard: React.FC<Props> = ({
   );
 };
 
-export default CasestudyCard;
+export default CaseStudyCardNew;

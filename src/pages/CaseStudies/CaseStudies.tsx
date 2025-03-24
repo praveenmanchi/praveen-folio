@@ -3,10 +3,8 @@ import './CaseStudies.css';
 import arrow from '../../assets/caseStudiesModal/white-arrow.svg';
 import CsChip from '../../components/CsChip/CsChip';
 import { csChipData } from '../../constants/csConstants';
-import CasestudyCard from '../../components/casestudyCard/casestudyCard';
 import circle from '../../assets/circle.svg';
-import csLg from '../../assets/caseStudies/cs-bg-lg.png';
-import csSm from '../../assets/caseStudies/cs-bg-sm.png';
+import CaseStudyCardNew from '../../components/CaseStudyCardNew/CaseStudyCardNew';
 
 const caseStudyCardsData = {
   caseStudyLg: [
@@ -140,17 +138,16 @@ const CaseStudies: React.FC = () => {
       </div>
       <div className='cs-card-container'>
         {caseStudyCardsData?.caseStudyLg?.map((card, idx) => (
-          <CasestudyCard img={csLg} key={idx} data={card} />
+          <CaseStudyCardNew key={idx} data={card} />
         ))}
 
         <div className='cs-horz-container'>
           {/* <CasestudyCard expertise={true} img={csSm} />
           <CasestudyCard expertise={true} img={csSm} /> */}
           {caseStudyCardsData?.caseStudySm?.map((card, idx) => (
-            <CasestudyCard img={csLg} key={idx} data={card} />
+            <CaseStudyCardNew key={idx} data={card} />
           ))}
         </div>
-        {/* <CasestudyCard img={csLg} /> */}
       </div>
     </div>
   );

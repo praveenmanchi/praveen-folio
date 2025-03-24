@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router';
 import praveenLogo from '../../assets/logo-thunderstorm-96.d1126ac.svg fill.svg';
 import './Header.css';
-import CaseStudiesHover from '../CaseStudiesHover/CaseStudiesHover';
 import ResourceModal from '../ResourceModal/ResourceModal';
+import CaseStudiesModal from '../CaseStudiesModal/CaseStudiesModal';
 
 const Header: React.FC = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -96,7 +96,7 @@ const Header: React.FC = () => {
       </header>
       {isModalVisible && (
         <div className='case-studies-modal'>
-          <CaseStudiesHover setIsModalVisible={setIsModalVisible} />
+          <CaseStudiesModal setIsModalVisible={setIsModalVisible} />
         </div>
       )}
       {isResourceModalVisible && (

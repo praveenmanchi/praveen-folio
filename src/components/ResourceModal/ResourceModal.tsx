@@ -1,6 +1,6 @@
 import React from 'react';
-import Casestudy from '../casestudy/casestudy';
 import './ResourceModal.css';
+import CaseStudyModalCard from '../CaseStudyModalCard/CaseStudyModalCard';
 
 const ResourceModal: React.FC = () => {
   return (
@@ -12,10 +12,10 @@ const ResourceModal: React.FC = () => {
         in this industry.
       </span>
       <div className='recent-case-studies'>
-        <Casestudy />
-        <Casestudy />
-        <Casestudy />
-        <Casestudy />
+        <CaseStudyModalCard />
+        <CaseStudyModalCard />
+        <CaseStudyModalCard />
+        <CaseStudyModalCard />
       </div>
     </div>
   );
