@@ -9,6 +9,7 @@ import Contact from './pages/Contact/Contact';
 import Blog from './pages/Blog/Blog';
 import PageTransition from './components/PageTransition/PageTransition';
 import MyDesignProcess from './pages/MyDesignProcess/MyDesignProcess';
+import CaseStudyDetails from './pages/caseStudyDetails/caseStudyDetails';
 
 const App: React.FC = () => {
   return (
@@ -22,6 +23,8 @@ const App: React.FC = () => {
           <Route path='/contact' element={<Contact />} />
           <Route path='/blog' element={<Blog />} />
           <Route path='/my-design-process' element={<MyDesignProcess />} />
+          <Route path='/case-studies-details' element={<CaseStudyDetails />} />
+          <Route path='/case-studies/:id' element={<CaseStudyDetails />} />
         </Routes>
       </PageTransition>
       <Footer />

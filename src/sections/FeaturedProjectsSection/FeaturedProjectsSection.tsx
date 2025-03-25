@@ -16,8 +16,6 @@ const FeaturedProjectsSection: React.FC = () => {
       {featuresProjectCardsData?.caseStudyLg?.map((card, idx) => (
         <CaseStudyCardNew key={idx} data={card} microTool={true} />
       ))}
-      {/* <CasestudyCard microTool={true} Casestudy={false} img={csLg} />
-      <CasestudyCard microTool={true} Casestudy={false} img={csLg} /> */}
       <div className='case-study-read-more-btn-container'>
         <div className='case-study-button-container'>
           <button className='case-study-button'>

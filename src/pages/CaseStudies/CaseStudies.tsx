@@ -23,6 +23,7 @@ const caseStudyCardsData = {
       imgSrc:
         'https://media.nngroup.com/static/img/banners/home-consulting_2x.webp',
       link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
+      pathName: 'amg-driving-academy',
     },
     {
       insight: true,
@@ -39,6 +40,7 @@ const caseStudyCardsData = {
       imgSrc:
         'https://media.nngroup.com/static/img/banners/home-consulting_2x.webp',
       link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
+      pathName: 'psychology-of-ux',
     },
   ],
   caseStudySm: [
@@ -53,6 +55,7 @@ const caseStudyCardsData = {
       imgSrc:
         'https://media.nngroup.com/static/img/banners/home-consulting_2x.webp',
       link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
+      pathName: 'e-commerce-optimization',
     },
     {
       insight: false,
@@ -65,6 +68,7 @@ const caseStudyCardsData = {
       imgSrc:
         'https://media.nngroup.com/static/img/banners/home-consulting_2x.webp',
       link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
+      pathName: 'mobile-app-design',
     },
   ],
 };

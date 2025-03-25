@@ -16,6 +16,7 @@ export const featuresProjectCardsData = {
       tools: '8 min',
       imgSrc: img,
       link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
+      pathName: 'mobile-app-design',
     },
     {
       insight: true,
@@ -31,6 +32,7 @@ export const featuresProjectCardsData = {
       tools: '8 min',
       imgSrc: imgSm,
       link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
+      pathName: 'saas-dashboard-redesign',
     },
   ],
 };

@@ -1,6 +1,42 @@
 import React from 'react';
 import './ResourceModal.css';
 import CaseStudyModalCard from '../CaseStudyModalCard/CaseStudyModalCard';
+import cs from '../../assets/caseStudiesModal/cs.png';
+
+const resourceModalData = [
+  {
+    img: cs,
+    chipContent: 'UX/UI Design',
+    title: 'Q3 Releases & Product Updates Q3 Releases & Product Updates',
+    date: 'Nov 12, 2024 —',
+    read: '7 min read',
+    link: '',
+  },
+  {
+    img: cs,
+    chipContent: 'UX/UI Design',
+    title: 'Q3 Releases & Product Updates Q3 Releases & Product Updates',
+    date: 'Nov 12, 2024 —',
+    read: '7 min read',
+    link: '',
+  },
+  {
+    img: cs,
+    chipContent: 'UX/UI Design',
+    title: 'Q3 Releases & Product Updates Q3 Releases & Product Updates',
+    date: 'Nov 12, 2024 —',
+    read: '7 min read',
+    link: '',
+  },
+  {
+    img: cs,
+    chipContent: 'UX/UI Design',
+    title: 'Q3 Releases & Product Updates Q3 Releases & Product Updates',
+    date: 'Nov 12, 2024 —',
+    read: '7 min read',
+    link: '',
+  },
+];
 
 const ResourceModal: React.FC = () => {
   return (
@@ -12,10 +48,9 @@ const ResourceModal: React.FC = () => {
         in this industry.
       </span>
       <div className='recent-case-studies'>
-        <CaseStudyModalCard />
-        <CaseStudyModalCard />
-        <CaseStudyModalCard />
-        <CaseStudyModalCard />
+        {resourceModalData?.map((eachCard, idx) => (
+          <CaseStudyModalCard data={eachCard} key={idx} />
+        ))}
       </div>
     </div>
   );

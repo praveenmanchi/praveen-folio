@@ -3,11 +3,39 @@ import arrow from '../../assets/caseStudiesModal/cs-arrow.svg';
 import wArrow from '../../assets/caseStudiesModal/white-arrow.svg';
 import './CaseStudiesModal.css';
 import { Link } from 'react-router';
+import cs from '../../assets/caseStudiesModal/cs.png';
 import CaseStudyModalCard from '../CaseStudyModalCard/CaseStudyModalCard';
 
 interface Props {
   setIsModalVisible: (value: boolean) => void;
 }
+
+const caseStudiesModalData = [
+  {
+    img: cs,
+    chipContent: 'UX/UI Design',
+    title: 'Q3 Releases & Product Updates Q3 Releases & Product Updates',
+    date: 'Nov 12, 2024 —',
+    read: '7 min read',
+    link: '',
+  },
+  {
+    img: cs,
+    chipContent: 'UX/UI Design',
+    title: 'Q3 Releases & Product Updates Q3 Releases & Product Updates',
+    date: 'Nov 12, 2024 —',
+    read: '7 min read',
+    link: '',
+  },
+  {
+    img: cs,
+    chipContent: 'UX/UI Design',
+    title: 'Q3 Releases & Product Updates Q3 Releases & Product Updates',
+    date: 'Nov 12, 2024 —',
+    read: '7 min read',
+    link: '',
+  },
+];
 
 const CaseStudiesModal: React.FC<Props> = ({ setIsModalVisible }: Props) => {
   return (
@@ -70,9 +98,9 @@ const CaseStudiesModal: React.FC<Props> = ({ setIsModalVisible }: Props) => {
       <div className='recent-case-studies-container'>
         <span className='recent-case-studies-title'>Recent Case Studies</span>
         <div className='recent-case-studies'>
-          <CaseStudyModalCard />
-          <CaseStudyModalCard />
-          <CaseStudyModalCard />
+          {caseStudiesModalData?.map((eachCard, idx) => (
+            <CaseStudyModalCard data={eachCard} key={idx} />
+          ))}
         </div>
       </div>
     </div>
