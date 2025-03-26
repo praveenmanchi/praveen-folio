@@ -1,15 +1,15 @@
 import React from 'react';
 import './ResourceModal.css';
 import CaseStudyModalCard from '../CaseStudyModalCard/CaseStudyModalCard';
-import cs from '../../assets/caseStudiesModal/cs.png';
-// import designboard from '../assets/resource/Design.png';
-// import UXAI from '../assets/resource/UI.png';
-// import iconboard from '../assets/resource/iconboard.png';
-// import protiflio from '../assets/resource/Portfolio.png';
+// import cs from '../../assets/caseStudiesModal/cs.png';
+import designboard from '../../assets/resource/Design.png';
+import UXAI from '../../assets/resource/UI.png';
+import iconboard from '../../assets/resource/iconboard.png';
+import protiflio from '../../assets/resource/Portfolio.png';
 
 const resourceModalData = [
   {
-    img: cs,
+    img: designboard,
     chipContent: 'Design Board',
     title: 'A platform for learning materials, inspiration, trends, and free design resources.',
     date: 'Nov 12, 2024 —',
@@ -17,7 +17,7 @@ const resourceModalData = [
     link: 'http://designboard.club/',
   },
   {
-    img: cs,
+    img: UXAI,
     chipContent: 'AI',
     title: 'A text generative AI to assist the designers in UX UI for design inquiries and help find inspiration',
     date: 'Nov 12, 2024 —',
@@ -25,7 +25,7 @@ const resourceModalData = [
     link: 'https://uxai.designboard.club/',
   },
   {
-    img: cs,
+    img: iconboard,
     chipContent: 'UX/UI Icons',
     title: 'A web app offering free icon to downloads and Reuse allowed without attribution or fee',
     date: 'Nov 12, 2024 —',
@@ -33,7 +33,7 @@ const resourceModalData = [
     link: 'https://www.iconboard.site/',
   },
   {
-    img: cs,
+    img: protiflio,
     chipContent: 'Protiflio',
     title: 'Q3 Releases & Product Updates Q3 Releases & Product Updates',
     date: 'Nov 12, 2024 —',
