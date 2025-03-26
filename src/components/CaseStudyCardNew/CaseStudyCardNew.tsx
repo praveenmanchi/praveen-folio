@@ -34,16 +34,16 @@ const CaseStudyCardNew: React.FC<Props> = ({
 }: Props) => {
   return (
     <Link
-      to={`/case-studies/${data?.pathName}`}
+      to={`/casestudies/${data?.pathName}`}
       style={{ textDecoration: 'none' }}
     >
       <div
         className='case-study-card'
-        style={{
-          background: Casestudy
-            ? ''
-            : `linear-gradient(to bottom, gray, black)`,
-        }}
+        // style={{
+        //   background: Casestudy
+        //     ? ''
+        //     : `linear-gradient(to bottom, gray, black)`,
+        // }}
       >
         <div
           className={

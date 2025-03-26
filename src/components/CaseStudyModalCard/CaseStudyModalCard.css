@@ -68,6 +68,11 @@
   font-weight: 400;
   line-height: 28.8px; /* 180% */
   letter-spacing: -0.045px;
+  cursor: pointer;
+}
+.comp-footer-link {
+  text-decoration: none;
+  border-top: none;
 }
 .date {
   color: #1d2a29a6;

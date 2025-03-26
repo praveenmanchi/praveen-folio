@@ -1,6 +1,8 @@
 import React from 'react';
 import arrow from '../../assets/caseStudiesModal/cs-arrow.svg';
+import icon from '../../assets/resource/resource-view-icon.svg';
 import './CaseStudyModalCard.css';
+import { Link } from 'react-router';
 interface Props {
   data: {
     img: string;
@@ -10,11 +12,12 @@ interface Props {
     read: string;
     link: string;
   };
+  resource?: boolean;
 }
 
-const CaseStudyModalCard: React.FC<Props> = ({ data }) => {
+const CaseStudyModalCard: React.FC<Props> = ({ data, resource }) => {
   return (
-    <div className='case-study-comp'>
+    <div className='case-study-comp' style={{ width: resource ? '25%' : '' }}>
       <div className='case-study-comp-header'>
         <img src={data?.img} alt='cs' className='case-study-comp-image' />
         <div className='case-study-comp-title'>{data?.chipContent}</div>
@@ -25,8 +28,18 @@ const CaseStudyModalCard: React.FC<Props> = ({ data }) => {
         </div>
       </div>
       <div className='case-study-comp-footer'>
-        View
-        <img src={arrow} alt='cs' className='case-study-comp-arrow' />
+        <Link
+          to={data?.link}
+          target='_blank'
+          className='case-study-comp-footer comp-footer-link'
+        >
+          View
+          {resource ? (
+            <img src={icon} alt='cs' className='case-study-comp-arrow' />
+          ) : (
+            <img src={arrow} alt='cs' className='case-study-comp-arrow' />
+          )}
+        </Link>
       </div>
     </div>
   );

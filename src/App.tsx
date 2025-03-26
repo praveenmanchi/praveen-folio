@@ -18,13 +18,12 @@ const App: React.FC = () => {
       <PageTransition type='slide' duration={0.7}>
         <Routes>
           <Route path='/' element={<Body />} />
-          <Route path='/about-me' element={<AboutMe />} />
-          <Route path='/case-studies' element={<CaseStudies />} />
+          <Route path='/aboutme' element={<AboutMe />} />
+          <Route path='/casestudies' element={<CaseStudies />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/blog' element={<Blog />} />
-          <Route path='/my-design-process' element={<MyDesignProcess />} />
-          <Route path='/case-studies-details' element={<CaseStudyDetails />} />
-          <Route path='/case-studies/:id' element={<CaseStudyDetails />} />
+          <Route path='/designprocess' element={<MyDesignProcess />} />
+          <Route path='/casestudies/:id' element={<CaseStudyDetails />} />
         </Routes>
       </PageTransition>
       <Footer />

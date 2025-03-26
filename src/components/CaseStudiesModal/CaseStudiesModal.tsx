@@ -46,37 +46,37 @@ const CaseStudiesModal: React.FC<Props> = ({ setIsModalVisible }: Props) => {
     <div className='case-studies-hover-container'>
       <div className='case-studies-hover'>
         <span className='case-studies-title'>Case Studies</span>
-        
-        <Link 
-          to='/design-systems' 
-          className='case-studies-item' 
+
+        <Link
+          to='/design-systems'
+          className='case-studies-item'
           onClick={() => handleItemClick('/design-systems')}
         >
           <span className='case-studies-item-title'>DESIGN SYSTEMS</span>
           <img className='case-studies-item-arrow' src={arrow} alt='arrow' />
         </Link>
-        
-        <Link 
-          to='/product-design' 
-          className='case-studies-item' 
+
+        <Link
+          to='/product-design'
+          className='case-studies-item'
           onClick={() => handleItemClick('/product-design')}
         >
           <span className='case-studies-item-title'>PRODUCT DESIGN</span>
           <img className='case-studies-item-arrow' src={arrow} alt='arrow' />
         </Link>
-        
-        <Link 
-          to='/ux-research' 
-          className='case-studies-item' 
+
+        <Link
+          to='/ux-research'
+          className='case-studies-item'
           onClick={() => handleItemClick('/ux-research')}
         >
           <span className='case-studies-item-title'>UX RESEARCH</span>
           <img className='case-studies-item-arrow' src={arrow} alt='arrow' />
         </Link>
-        
-        <Link 
+
+        <Link
           to='/nda-case-studies'
-          className='case-studies-button nda-case' 
+          className='case-studies-button nda-case'
           style={{ marginTop: '40px', textDecoration: 'none' }}
           onClick={() => handleItemClick('/nda-case-studies')}
         >
@@ -85,24 +85,22 @@ const CaseStudiesModal: React.FC<Props> = ({ setIsModalVisible }: Props) => {
           </span>
           <img className='case-studies-button-arrow' src={arrow} alt='arrow' />
         </Link>
-        
-        <Link 
-          to='/my-design-process'
+
+        <Link
+          to='/designprocess'
           className='case-studies-button'
           style={{ textDecoration: 'none' }}
-          onClick={() => handleItemClick('/my-design-process')}
+          onClick={() => handleItemClick('/designprocess')}
         >
-          <span className='case-studies-button-text'>
-            My Design Process
-          </span>
+          <span className='case-studies-button-text'>My Design Process</span>
           <img className='case-studies-button-arrow' src={wArrow} alt='arrow' />
         </Link>
-        
-        <Link 
-          to='/case-studies'
+
+        <Link
+          to='/casestudies'
           className='case-studies-button'
           style={{ textDecoration: 'none' }}
-          onClick={() => handleItemClick('/case-studies')}
+          onClick={() => handleItemClick('/casestudies')}
         >
           <span className='case-studies-button-text'>
             View All Case Studies

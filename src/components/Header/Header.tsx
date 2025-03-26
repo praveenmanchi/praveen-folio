@@ -93,9 +93,9 @@ const Header: React.FC = () => {
           <ul>
             <li>
               <Link
-                to='/about-me'
-                className={activeLink === '/about-me' ? 'active' : ''}
-                onClick={() => handleLinkClick('/about-me')}
+                to='/aboutme'
+                className={activeLink === '/aboutme' ? 'active' : ''}
+                onClick={() => handleLinkClick('/aboutme')}
               >
                 ABOUT ME
               </Link>
