@@ -118,7 +118,7 @@ const Header: React.FC = () => {
                 className={activeLink === '/contact' ? 'active' : ''}
                 onClick={() => handleLinkClick('/contact')}
               >
-                Contact
+                Resume
               </Link>
             </li>
             <li>

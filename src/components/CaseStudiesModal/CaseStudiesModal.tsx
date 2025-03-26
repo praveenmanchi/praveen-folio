@@ -1,8 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router';
 import arrow from '../../assets/caseStudiesModal/cs-arrow.svg';
 import wArrow from '../../assets/caseStudiesModal/white-arrow.svg';
 import './CaseStudiesModal.css';
-import { Link } from 'react-router';
 import cs from '../../assets/caseStudiesModal/cs.png';
 import CaseStudyModalCard from '../CaseStudyModalCard/CaseStudyModalCard';
 
@@ -38,62 +38,77 @@ const caseStudiesModalData = [
 ];
 
 const CaseStudiesModal: React.FC<Props> = ({ setIsModalVisible }: Props) => {
+  const handleItemClick = (route: string) => {
+    setIsModalVisible(false);
+  };
+
   return (
     <div className='case-studies-hover-container'>
       <div className='case-studies-hover'>
         <span className='case-studies-title'>Case Studies</span>
-        <div className='case-studies-item'>
-          <span
-            className='case-studies-item-title'
-            style={{ marginTop: '14px' }}
-          >
-            DESIGN SYSTEMS
-          </span>
+        
+        <Link 
+          to='/design-systems' 
+          className='case-studies-item' 
+          onClick={() => handleItemClick('/design-systems')}
+        >
+          <span className='case-studies-item-title'>DESIGN SYSTEMS</span>
           <img className='case-studies-item-arrow' src={arrow} alt='arrow' />
-        </div>
-        <div className='case-studies-item'>
+        </Link>
+        
+        <Link 
+          to='/product-design' 
+          className='case-studies-item' 
+          onClick={() => handleItemClick('/product-design')}
+        >
           <span className='case-studies-item-title'>PRODUCT DESIGN</span>
           <img className='case-studies-item-arrow' src={arrow} alt='arrow' />
-        </div>
-        <div className='case-studies-item'>
+        </Link>
+        
+        <Link 
+          to='/ux-research' 
+          className='case-studies-item' 
+          onClick={() => handleItemClick('/ux-research')}
+        >
           <span className='case-studies-item-title'>UX RESEARCH</span>
           <img className='case-studies-item-arrow' src={arrow} alt='arrow' />
-        </div>
-        <button
-          className='case-studies-button nda-case'
-          style={{ marginTop: '40px' }}
+        </Link>
+        
+        <Link 
+          to='/nda-case-studies'
+          className='case-studies-button nda-case' 
+          style={{ marginTop: '40px', textDecoration: 'none' }}
+          onClick={() => handleItemClick('/nda-case-studies')}
         >
           <span className='case-studies-button-text nda-text'>
             View NDA Case Studies
           </span>
           <img className='case-studies-button-arrow' src={arrow} alt='arrow' />
-        </button>
-        <button className='case-studies-button'>
+        </Link>
+        
+        <Link 
+          to='/my-design-process'
+          className='case-studies-button'
+          style={{ textDecoration: 'none' }}
+          onClick={() => handleItemClick('/my-design-process')}
+        >
           <span className='case-studies-button-text'>
-            <Link
-              to='/my-design-process'
-              className='case-studies-button-text'
-              style={{ textDecoration: 'none' }}
-              onClick={() => setIsModalVisible(false)}
-            >
-              My Design Process
-            </Link>
+            My Design Process
           </span>
           <img className='case-studies-button-arrow' src={wArrow} alt='arrow' />
-        </button>
-        <button className='case-studies-button'>
+        </Link>
+        
+        <Link 
+          to='/case-studies'
+          className='case-studies-button'
+          style={{ textDecoration: 'none' }}
+          onClick={() => handleItemClick('/case-studies')}
+        >
           <span className='case-studies-button-text'>
-            <Link
-              to='/case-studies'
-              className='case-studies-button-text'
-              style={{ textDecoration: 'none' }}
-              onClick={() => setIsModalVisible(false)}
-            >
-              View All Case Studies
-            </Link>
+            View All Case Studies
           </span>
           <img className='case-studies-button-arrow' src={wArrow} alt='arrow' />
-        </button>
+        </Link>
       </div>
       <div className='recent-case-studies-container'>
         <span className='recent-case-studies-title'>Recent Case Studies</span>

@@ -17,7 +17,7 @@ const blogsData = {
       readTime: '8 min',
       imgSrc:
         'https://media.nngroup.com/static/img/banners/home-consulting_2x.webp',
-      link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
+      link: 'https://www.nngroup.com/articles/psychology-ux-design/',
       chipLabel: 'UX Design',
     },
     {
@@ -28,7 +28,7 @@ const blogsData = {
       readTime: '6 min',
       imgSrc:
         'https://media.nngroup.com/static/img/banners/home-consulting_2x.webp',
-      link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
+      link: 'https://www.smashingmagazine.com/2024/01/design-systems-unified-digital-language/',
       chipLabel: 'UX Design',
     },
   ],
@@ -39,7 +39,7 @@ const blogsData = {
       readTime: '5 min',
       imgSrc:
         'https://media.nngroup.com/static/img/banners/home-consulting_2x.webp',
-      link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
+      link: 'https://uxplanet.org/accessibility-in-ui-design-2024-guide',
       chipLabel: 'UX Design',
     },
     {
@@ -49,7 +49,7 @@ const blogsData = {
       readTime: '4 min',
       imgSrc:
         'https://media.nngroup.com/static/img/banners/home-consulting_2x.webp',
-      link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
+      link: 'https://uxdesign.cc/microinteractions-ui-ux-design-trends',
       chipLabel: 'UX Design',
     },
     {
@@ -58,7 +58,7 @@ const blogsData = {
       readTime: '6 min',
       imgSrc:
         'https://media.nngroup.com/static/img/banners/home-consulting_2x.webp',
-      link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
+      link: 'https://www.smashingmagazine.com/2024/06/data-visualization-ux-design/',
       chipLabel: 'UX Design',
     },
     {
@@ -67,7 +67,7 @@ const blogsData = {
       readTime: '5 min',
       imgSrc:
         'https://media.nngroup.com/static/img/banners/home-consulting_2x.webp',
-      link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
+      link: 'https://uxplanet.org/emotional-design-interfaces-2024',
       chipLabel: 'UX Design',
     },
   ],
@@ -75,10 +75,11 @@ const blogsData = {
     title: 'The Convergence of UX Design and Machine Learning',
     subtitle:
       "As machine learning models become more sophisticated, they're increasingly influencing how designers approach user interfaces. This fusion is creating adaptive experiences that learn from user behavior while presenting new ethical considerations...",
-    link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
+    link: 'https://uxmag.com/articles/the-convergence-of-ux-design-and-machine-learning-2024',
     chipLabel: 'UX Design',
   },
-};
+}
+
 
 const Blog: React.FC = () => {
   return (

@@ -9,9 +9,8 @@ const FeaturedProjectsSection: React.FC = () => {
     <div className='featured-projects-section'>
       <h2 className='featured-projects-heading'>Featured Projects</h2>
       <p className='featured-projects-description'>
-        This personal space aims to showcase how I think and work and become a
-        place where I can share my thoughts and my journey as a product designer
-        in this industry.
+        This personal space aims to showcase how I think and work and solve a
+        problems with my thoughts and my process to dlivery the top-noch quality.
       </p>
       {featuresProjectCardsData?.caseStudyLg?.map((card, idx) => (
         <CaseStudyCardNew key={idx} data={card} microTool={true} />
@@ -19,7 +18,7 @@ const FeaturedProjectsSection: React.FC = () => {
       <div className='case-study-read-more-btn-container'>
         <div className='case-study-button-container'>
           <button className='case-study-button'>
-            READ MORE ABOUT ME
+            VIEW MORE CASESTUDIES
             <img src={arrow} alt='' className='case-study-arrow' />
           </button>
         </div>
