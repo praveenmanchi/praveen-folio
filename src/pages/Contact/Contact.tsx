@@ -9,6 +9,29 @@ import noteIcon from '../../assets/note-icon.svg';
 import figmaIcon from '../../assets/figma-icon.svg';
 
 const Contact: React.FC = () => {
+  const userEmail = 'praveenmanchi.work@proton.me'; // Replace with actual email
+  const resumeUrl = 'https://drive.google.com/uc?export=download&id=1-Rg2c36FfnNILcTeQp-PmiQp4C-4LhvK'; 
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText(userEmail)
+      .then(() => {
+        alert('Email copied to clipboard!');
+      })
+      .catch(err => {
+        console.error('Failed to copy email: ', err);
+        alert('Failed to copy email. Please try again.');
+      });
+  };
+
+  const handleDownloadResume = () => {
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'Praveen_Manchi_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className='contact-container'>
       <div className='contact-message'>
@@ -22,8 +45,16 @@ const Contact: React.FC = () => {
           you prefer the old-fashioned way, you can copy my email.
         </span>
         <div className='contact-buttons-container'>
-          <CustomisedButton label={'Copy my e-mail'} img={emailIcon} />
-          <CustomisedButton label={'Resume'} img={resumeIcon} />
+          <CustomisedButton 
+            label={'Copy my e-mail'} 
+            img={emailIcon} 
+            onClick={handleCopyEmail} 
+          />
+          <CustomisedButton 
+            label={'Resume'} 
+            img={resumeIcon} 
+            onClick={handleDownloadResume} 
+          />
           <nav className='footer__empty-section-icons'>
             {[
               {
@@ -61,9 +92,9 @@ const Contact: React.FC = () => {
       </div>
       <div className='contact-pdf-thumbnail'>
         <iframe
-          src='https://drive.google.com/file/d/YOUR_FILE_ID/preview'
+          src='https://drive.google.com/file/d/1-Rg2c36FfnNILcTeQp-PmiQp4C-4LhvK/preview'
           width='680px'
-          height='641px'
+          height='800px'
           style={{ border: 'none', borderRadius: '8px' }}
           allowFullScreen
         ></iframe>

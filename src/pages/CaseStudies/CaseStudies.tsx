@@ -5,6 +5,12 @@ import CsChip from '../../components/CsChip/CsChip';
 import { csChipData } from '../../constants/csConstants';
 import circle from '../../assets/circle.svg';
 import CaseStudyCardNew from '../../components/CaseStudyCardNew/CaseStudyCardNew';
+// import benzbanner from '../assets/dataimages/benz.png';
+// import paysafe from '../assets/dataimages/Paysafe.png';
+// import nobroker from '../assets/dataimages/NoBroker.png';
+// import cisco from '../assets/dataimages/Cisco.png';
+// import cluster from '../assets/dataimages/';
+// import nobroker from '../assets/dataimages/NoBroker.png';
 
 const caseStudyCardsData = {
   caseStudyLg: [
@@ -21,7 +27,7 @@ const caseStudyCardsData = {
       client: 'ge',
       tools: '8 min',
       imgSrc:
-        'https://media.nngroup.com/static/img/banners/home-consulting_2x.webp',
+        'benzbanner',
       link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
       pathName: 'amg-driving-academy',
     },
@@ -38,7 +44,41 @@ const caseStudyCardsData = {
       client: 'ge',
       tools: '8 min',
       imgSrc:
-        'https://media.nngroup.com/static/img/banners/home-consulting_2x.webp',
+        'nobroker',
+      link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
+      pathName: 'psychology-of-ux',
+    },
+    {
+      insight: true,
+      insight1: '5%',
+      insight1Desc: 'Increase in resume building',
+      insight2: '5%',
+      insight2Desc: 'Increase in resume building',
+      title: 'The Psychology Behind Effective UX Design',
+      description:
+        'Explore the cognitive principles that make certain user interfaces intuitive and satisfying while others frustrate users. Learn how to apply psychological insights to create more engaging digital experiences.',
+      position: 'Lead Designer',
+      client: 'ge',
+      tools: '8 min',
+      imgSrc:
+        'benzbanner',
+      link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
+      pathName: 'amg-driving-academy',
+    },
+    {
+      insight: true,
+      insight1: '5%',
+      insight1Desc: 'Increase in resume building',
+      insight2: '5%',
+      insight2Desc: 'Increase in resume building',
+      title: 'The Psychology Behind Effective UX Design',
+      description:
+        'Explore the cognitive principles that make certain user interfaces intuitive and satisfying while others frustrate users. Learn how to apply psychological insights to create more engaging digital experiences.',
+      position: 'Lead Designer',
+      client: 'ge',
+      tools: '8 min',
+      imgSrc:
+        'nobroker',
       link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
       pathName: 'psychology-of-ux',
     },
@@ -71,6 +111,7 @@ const caseStudyCardsData = {
       pathName: 'mobile-app-design',
     },
   ],
+  
 };
 
 const CaseStudies: React.FC = () => {
@@ -119,7 +160,7 @@ const CaseStudies: React.FC = () => {
             My design process varies slightly depending on the nature of the
             project at hand. Am I redesigning an existing product, creating a
             new product from scratch, adding new features to an already existing
-            product
+            product.
           </span>
         </div>
         <button className='case-studies-open-document-button'>
