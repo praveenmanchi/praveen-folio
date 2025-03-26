@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './CaseStudies.css';
 import arrow from '../../assets/caseStudiesModal/white-arrow.svg';
 import CsChip from '../../components/CsChip/CsChip';
@@ -11,141 +11,55 @@ import nobroker from '../../assets/dataimages/NoBroker.png';
 import cisco from '../../assets/dataimages/Cisco.png';
 import cluster from '../../assets/dataimages/';
 import { Link } from 'react-router';
+import { caseStudyCardDataDummy } from '../../constants/caseStudyDummyData';
 
-const caseStudyCardsData = {
-  caseStudyLg: [
-    {
-      insight: true,
-      insight1: '5%',
-      insight1Desc: 'Increase in resume building',
-      insight2: '5%',
-      insight2Desc: 'Increase in resume building',
-      title: 'The Psychology Behind Effective UX Design',
-      description:
-        'Explore the cognitive principles that make certain user interfaces intuitive and satisfying while others frustrate users. Learn how to apply psychological insights to create more engaging digital experiences.',
-      position: 'Lead Designer',
-      client: 'ge',
-      tools: '8 min',
-      imgSrc: benzbanner,
-      link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
-      pathName: 'amg-driving-academy',
-    },
-    {
-      insight: true,
-      insight1: '5%',
-      insight1Desc: 'Increase in resume building',
-      insight2: '5%',
-      insight2Desc: 'Increase in resume building',
-      title: 'The Psychology Behind Effective UX Design',
-      description:
-        'Explore the cognitive principles that make certain user interfaces intuitive and satisfying while others frustrate users. Learn how to apply psychological insights to create more engaging digital experiences.',
-      position: 'Lead Designer',
-      client: 'ge',
-      tools: '8 min',
-      imgSrc: paysafe,
-      link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
-      pathName: 'psychology-of-ux',
-    },
-    {
-      insight: true,
-      insight1: '5%',
-      insight1Desc: 'Increase in resume building',
-      insight2: '5%',
-      insight2Desc: 'Increase in resume building',
-      title: 'The Psychology Behind Effective UX Design',
-      description:
-        'Explore the cognitive principles that make certain user interfaces intuitive and satisfying while others frustrate users. Learn how to apply psychological insights to create more engaging digital experiences.',
-      position: 'Lead Designer',
-      client: 'ge',
-      tools: '8 min',
-      imgSrc: 'benzbanner',
-      link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
-      pathName: 'amg-driving-academy',
-    },
-    {
-      insight: true,
-      insight1: '5%',
-      insight1Desc: 'Increase in resume building',
-      insight2: '5%',
-      insight2Desc: 'Increase in resume building',
-      title: 'The Psychology Behind Effective UX Design',
-      description:
-        'Explore the cognitive principles that make certain user interfaces intuitive and satisfying while others frustrate users. Learn how to apply psychological insights to create more engaging digital experiences.',
-      position: 'Lead Designer',
-      client: 'ge',
-      tools: '8 min',
-      imgSrc: 'nobroker',
-      link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
-      pathName: 'psychology-of-ux',
-    },
-  ],
-  caseStudySm: [
-    {
-      insight: false,
-      title: 'The Psychology Behind Effective UX Design',
-      description:
-        'Explore the cognitive principles that make certain user interfaces intuitive and satisfying while others frustrate users. Learn how to apply psychological insights to create more engaging digital experiences.',
-      position: 'Nov 5, 2023',
-      client: 'ge',
-      tools: '8 min',
-      imgSrc:
-        'https://media.nngroup.com/static/img/banners/home-consulting_2x.webp',
-      link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
-      pathName: 'e-commerce-optimization',
-    },
-    {
-      insight: false,
-      title: 'The Psychology Behind Effective UX Design',
-      description:
-        'Explore the cognitive principles that make certain user interfaces intuitive and satisfying while others frustrate users. Learn how to apply psychological insights to create more engaging digital experiences.',
-      position: 'Nov 5, 2023',
-      client: 'ge',
-      tools: '8 min',
-      imgSrc:
-        'https://media.nngroup.com/static/img/banners/home-consulting_2x.webp',
-      link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
-      pathName: 'mobile-app-design',
-    },
-  ],
-  caseStudyXs: [
-    {
-      insight: false,
-      title: 'The Psychology Behind Effective UX Design',
-      description:
-        'Explore the cognitive principles that make certain user interfaces intuitive and satisfying while others frustrate users. Learn how to apply psychological insights to create more engaging digital experiences.',
-      position: 'Nov 5, 2023',
-      client: 'ge',
-      tools: '8 min',
-      imgSrc: nobroker,
-      link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
-      pathName: 'e-commerce-optimization',
-    },
-    {
-      insight: false,
-      title: 'The Psychology Behind Effective UX Design',
-      description:
-        'Explore the cognitive principles that make certain user interfaces intuitive and satisfying while others frustrate users. Learn how to apply psychological insights to create more engaging digital experiences.',
-      position: 'Nov 5, 2023',
-      client: 'ge',
-      tools: '8 min',
-      imgSrc: nobroker,
-      link: 'https://open.substack.com/pub/praveenmanchi/p/amg-driving-academy-case-study?r=4yhy4f&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
-      pathName: 'mobile-app-design',
-    },
-  ],
-};
+interface CaseStudy {
+  title: string;
+  description: string;
+  imgSrc: string;
+  pathName: string;
+}
+
+interface CaseStudyCategory {
+  caseStudyLg?: CaseStudy[];
+  caseStudySm?: CaseStudy[];
+}
+
+interface CaseStudyData {
+  [key: string]: CaseStudyCategory; // "Web App" or "Mobile App"
+}
 
 const CaseStudies: React.FC = () => {
-  // const [selectedChips, setSelectedChips] = useState(['web app']);
+  const [selectedChips, setSelectedChips] = useState(['']);
 
-  // const handleChipSelect = (chipLabel: string) => {
-  //   console.log(chipLabel);
-  //   setSelectedChips((prevSelected: any) =>
-  //     prevSelected.includes(chipLabel)
-  //       ? prevSelected.filter((label) => label !== chipLabel)
-  //       : [...prevSelected, chipLabel]
-  //   );
-  // };
+  const handleChipSelect = (chipLabel: string) => {
+    setSelectedChips((prevSelected) =>
+      prevSelected.includes(chipLabel)
+        ? prevSelected.filter((label: string) => label !== chipLabel)
+        : [...prevSelected, chipLabel]
+    );
+  };
+
+  console.log(selectedChips);
+
+  const filteredData = caseStudyCardDataDummy.filter((item) => {
+    const key = Object.keys(item)[0];
+    return selectedChips.some(
+      (chip) => chip.toLowerCase() === key.toLowerCase()
+    );
+  });
+
+  const extractCaseStudies = (
+    data: CaseStudyData[],
+    type: keyof CaseStudyCategory
+  ): CaseStudy[] =>
+    data.flatMap((appCategory) =>
+      Object.values(appCategory).flatMap((app) => app[type] ?? [])
+    );
+
+  const caseStudyLg = extractCaseStudies(filteredData, 'caseStudyLg');
+  // const caseStudySm = extractCaseStudies(filteredData, 'caseStudySm');
+
   return (
     <div className='case-studies-container'>
       <div className='case-studies-header'>
@@ -199,19 +113,23 @@ const CaseStudies: React.FC = () => {
               label={eachChip?.label}
               count={eachChip?.number}
               key={idx}
-              // onClick={() => handleChipSelect(eachChip.label)}
+              handleChipSelect={handleChipSelect}
             />
           ))}
         </div>
       </div>
       <div className='cs-card-container'>
-        {caseStudyCardsData?.caseStudyLg?.map((card, idx) => (
+        {/* {caseStudyCardsData?.caseStudyLg?.map((card, idx) => (
+          <CaseStudyCardNew key={idx} data={card} />
+        ))} */}
+
+        {caseStudyLg.map((card: object, idx: number) => (
           <CaseStudyCardNew key={idx} data={card} />
         ))}
 
         {/* //small cards */}
 
-        <div className='cs-horz-container'>
+        {/* <div className='cs-horz-container'>
           {caseStudyCardsData?.caseStudySm?.map((card, idx) => (
             <CaseStudyCardNew key={idx} data={card} />
           ))}
@@ -220,7 +138,7 @@ const CaseStudies: React.FC = () => {
           {caseStudyCardsData?.caseStudyXs?.map((card, idx) => (
             <CaseStudyCardNew key={idx} data={card} />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

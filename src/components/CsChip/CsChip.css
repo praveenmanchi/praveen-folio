@@ -8,6 +8,7 @@
   background: #0b0f14;
   overflow: hidden;
   padding: 8px;
+  cursor: pointer;
 }
 .cs-chip__label {
   color: rgba(255, 255, 255, 0.6);
