@@ -7,7 +7,7 @@
 .blog-title {
   color: #fff;
   font-family: Inter;
-  font-size: 50.261px;
+  font-size: 32;
   font-style: normal;
   font-weight: 600;
   line-height: 50.261px; /* 100% */
@@ -16,7 +16,7 @@
 .blog-description {
   color: #b8c1cc;
   font-family: Inter;
-  font-size: 19.375px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: 36px; /* 185.806% */

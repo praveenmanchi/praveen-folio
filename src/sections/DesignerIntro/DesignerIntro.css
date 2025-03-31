@@ -22,6 +22,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  line-height: 80px; /* 289.208% */
 }
 
 .designer-intro__greeting {

@@ -9,7 +9,7 @@ export const cardData = [
     backgroundColor: '#BDBBFF',
     image: myStory,
     description:
-      'Investor relations reimagined. Leverage software to drive meaningful, actionable engagement.',
+      'A creative journey blending art and problem-solving into intuitive experiences.',
     link: '/aboutme',
   },
   {
@@ -17,15 +17,15 @@ export const cardData = [
     backgroundColor: '#FDD6CF',
     image: moodBoard,
     description:
-      'Consolidate your capital management with seamless, flexible and secure banking solutions.',
+      'A collection of visual inspirations shaping my creative process.',
     link: '/moodboard',
   },
   {
-    title: 'Design Process ',
+    title: 'Design Process',
     backgroundColor: '#9BA078',
     image: designProcess,
     description:
-      'Access 50+ services that remove friction from fund management for venture funds, rolling funds, and syndicates.',
+      'Transforming ideas into impactful solutions through thoughtful design.',
     link: '/designprocess',
   },
   {
@@ -33,7 +33,8 @@ export const cardData = [
     backgroundColor: '#D1E8E3',
     image: photography,
     description:
-      'Modern cap tables for high-growth companies. Unmatched automations turn equity into an advantage.',
+      'Capturing stories through my lens—moments, moods, and creativity.',
     link: '',
   },
 ];
+

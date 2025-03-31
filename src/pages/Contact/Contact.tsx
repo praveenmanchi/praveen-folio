@@ -35,15 +35,16 @@ const Contact: React.FC = () => {
   return (
     <div className='contact-container'>
       <div className='contact-message'>
-        <span className='contact-greeting'>
-          Hey there! Did someone just say espresso?
-        </span>
-        <span className='contact-description'>
-          I'm always happy to meet new people from the Internet, help fellow
-          designers/engineers, or participate in events—virtual or otherwise.
-          The best way to get in touch with me is through Twitter. However, if
-          you prefer the old-fashioned way, you can copy my email.
-        </span>
+      <span className='contact-greeting'>
+  Wait, did someone just whisper "UX/UI opportunity"? You have my full attention!
+</span>
+<span className='contact-description'>
+  I'm always game for chatting about crafting delightful user experiences, solving 
+  design puzzles, or exchanging stories with fellow creators. The best way to reach 
+  me is via LinkedIn—it's like the modern-day business card, right? But if you're feeling 
+  old-school, you can always shoot me an email (no smoke signals, please).
+</span>
+
         <div className='contact-buttons-container'>
           <CustomisedButton 
             label={'Copy my e-mail'} 

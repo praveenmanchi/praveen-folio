@@ -1,7 +1,7 @@
 import React from 'react';
 import './ResourceModal.css';
 import CaseStudyModalCard from '../CaseStudyModalCard/CaseStudyModalCard';
-import cs from '../../assets/caseStudiesModal/cs.png';
+// import cs from '../../assets/caseStudiesModal/cs.png';
 import designboard from '../../assets/resource/Design.png';
 import UXAI from '../../assets/resource/UI.png';
 import iconboard from '../../assets/resource/iconboard.png';
@@ -12,35 +12,35 @@ const resourceModalData = [
     img: designboard,
     chipContent: 'Design Board',
     title:
-      'A platform for learning materials, inspiration, trends, and free design resources.',
-    date: 'Nov 12, 2024 —',
-    read: '7 min read',
+      'A central hub for all things UX/UI design! I curate a diverse collection of articles and resources at every stage—from beginner to advanced techniques',
+    date: false,
+    read: false,
     link: 'http://designboard.club/',
   },
   {
     img: UXAI,
     chipContent: 'AI',
     title:
-      'A text generative AI to assist the designers in UX UI for design inquiries and help find inspiration',
-    date: 'Nov 12, 2024 —',
-    read: '7 min read',
+      'A generative AI tool (I call it UXAI) designed to assist UX/UI designers with inquiries, articles, and refined image searches to spark inspiration.',
+    date: false,
+    read: false,
     link: 'https://uxai.designboard.club/',
   },
   {
     img: iconboard,
     chipContent: 'UX/UI Icons',
     title:
-      'A web app offering free icon to downloads and Reuse allowed without attribution or fee',
-    date: 'Nov 12, 2024 —',
-    read: '7 min read',
+      'A web app offering a vast collection of free icons for download, allowing you to use and reuse them without any attribution or fees. you can also to coustimize them',
+    date: false,
+    read: false,
     link: 'https://www.iconboard.site/',
   },
   {
     img: protiflio,
     chipContent: 'Protiflio',
-    title: 'Q3 Releases & Product Updates Q3 Releases & Product Updates',
-    date: 'Nov 12, 2024 —',
-    read: '7 min read',
+    title: 'The complete source code of my portfolio, along with detailed documentation, enabling you to understand, customize, and build your own version effortlessly.',
+    date: false,
+    read: false,
     link: 'https://praveenmanchi.netlify.app/',
   },
 ];
